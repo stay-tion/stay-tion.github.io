@@ -165,30 +165,32 @@ p {
  
 /*grid*/
   flex: 50%;
-  padding: 0 4px;
+  padding: 0% 0%;
 }
 
 /*photo grid settings*/
 .container img {
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 /* Make the image responsive */
 .overlay-image {
-  display: inline-block;
-  width: 80%;
+  display: block;
+  width: 77%;
   height: auto;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
   position: absolute;
+  display: inline-block;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.7); /* white see-through */
-  width: 80%;
+  background: rgba(0, 0, 0, 0.7); /* white see-through */
+  width: 77%;
   height: 100%;
   transition: .5s ease;
   opacity:0;
+  overflow:none;
   text-align: center;
   
 }
@@ -217,7 +219,9 @@ p {
 /* ================================================= Links in article section ============================================ */
 /* Unvisited links */
 article a:link {
-  font: 2.5em Georgia, Serif;
+  font: 30px Georgia, Serif;
+  padding: 0;
+  margin: 0;
   color: black;
   text-decoration: underline overline #000;
   text-align: center;
