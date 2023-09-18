@@ -185,7 +185,7 @@ p {
   position: absolute;
   display: inline-block;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* white see-through */
+  background: rgba(255, 255, 255, 0.7); /* white see-through */
   width: 77%;
   height: 100%;
   transition: .5s ease;
