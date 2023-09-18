@@ -89,7 +89,7 @@ nav a:hover, nav a:active {
 
 
 
-/*=====================================================Styling for the article section======================================*/
+/*=====================================================Styling for the article/body section======================================*/
 
 /* Style elements inside of header*/
 .block {
@@ -111,8 +111,6 @@ article{
 
 
 
-
-/*=============================================== Body style rules and classess===========================================*/
 
 
 /* Style for bullet points */
@@ -186,15 +184,13 @@ p {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
   background: rgba(255, 255, 255, 0.7); /* white see-through */
   width: 80%;
   height: 100%;
   transition: .5s ease;
   opacity:0;
-  color: white;
-  padding: 20px;
   text-align: center;
+  
 }
 
 /* When you mouse over the container, fade in the overlay title */
@@ -221,17 +217,17 @@ p {
 /* ================================================= Links in article section ============================================ */
 /* Unvisited links */
 article a:link {
-  font: 20px/10px Georgia, Serif;
+  font: 2.5em Georgia, Serif;
   color: black;
   text-decoration: underline overline #000;
-  outline: none;
+  text-align: center;
 }
 
 /* Visited links */
 article a:visited {
   color: grey;
-  text-decoration: none;
-  outline: none;
+  text-decoration: underline overline #000;
+
 }
 
 /* Mouse pointer on link */
@@ -239,7 +235,6 @@ article a:hover {
   background-color: #bc9f81;
   color: #1e2953;
   text-decoration: none;
-  outline: none;
 }
 
 /* Mouse pointer on link and left button down */
@@ -430,6 +425,8 @@ article a:active {
     --moz-column-count: 1;
   }
 }
+
+
 
 
 
