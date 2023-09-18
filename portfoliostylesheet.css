@@ -245,7 +245,6 @@ p {
 /* Container needed to position the overlay */
 .overlay-container {
   position: relative;
-  margin-left:150px;
   max-width: 50%;
  
 /*grid*/
