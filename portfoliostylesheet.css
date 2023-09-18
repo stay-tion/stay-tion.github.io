@@ -1,5 +1,5 @@
 /* portfoliostylesheet.css */
-/* Style rule for the body element */
+/*========================================== Style rule for the body element ==========================================*/
 body {
   background-color: white;
   /*background-image: linear-gradient(#003366,#c9ba95); */
@@ -20,9 +20,8 @@ header, nav, aside, article, footer, section{
  display:block;
 }
 
-/*==============Layout Sections============*/
 
-/*Styling for page header */
+/*========================================== Styling for page header =================================================*/
 header{
 		height: 115px;
 		padding: 15px;
@@ -41,13 +40,17 @@ header{
 }
 
 
-/*======== Styling for the sidebar section (aside)====*/
+/*=========================================== Styling for the sidebar section (aside)=======================================*/
 aside{
  font: 25px Times New Roman, Georgia, Serif;
  width:130px;
  padding:10px;
  float:left;
 }
+
+
+
+
 
 /*============================================= Styling for links in nav section============================================*/
 nav a{
@@ -107,84 +110,6 @@ article{
 }
 
 
-/* ================================================= Links in article section ============================================ */
-/* Unvisited links */
-article a:link {
-  color: blue;
-  text-decoration: none;
-  outline: none;
-}
-
-/* Visited links */
-article a:visited {
-  color: grey;
-  text-decoration: none;
-  outline: none;
-}
-
-/* Mouse pointer on link */
-article a:hover {
-  background-color: #bc9f81;
-  color: #1e2953;
-  text-decoration: none;
-  outline: none;
-}
-
-/* Mouse pointer on link and left button down */
-article a:active {
-  background-color: #1e2953;
-  color: #bc9f81;
-}
-
-/*====================================Styling the just for fun article section========================================*/
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.gallery {
-  column-count: 4;
-  --webkit-column-count: 4;
-  --moz-column-count: 4;
-  gap: 1rem;
-  padding: 4rem;
-}
-
-.image img {
-  height: auto;
-  width: 100%;
-}
-
-/* Responsive-ness for different screen-sizes */
-@media screen and (max-width: 810px) {
-  .gallery {
-    column-count: 3;
-    --webkit-column-count: 3;
-    --moz-column-count: 3;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .gallery {
-    column-count: 2;
-    --webkit-column-count: 2;
-    --moz-column-count: 2;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .gallery {
-    column-count: 1;
-    --webkit-column-count: 1;
-    --moz-column-count: 1;
-  }
-}
-
-
 
 
 /*=============================================== Body style rules and classess===========================================*/
@@ -213,16 +138,7 @@ p {
 }
 
 
-.proj {
-	font-family:'Comfortaa', cursive;
-	font-size:20px;
-	color:#000;
-	text-align: center;
-	background-color: white;
-	margin-left: 280px;
-	margin-top: 20px;
 
-}
 
 
 /* =============================================================== Misc ================================================== */
@@ -239,14 +155,12 @@ p {
 }
 
 
-/* =======================================================Style for book overlay==========================================*/
+/* =======================================================Style for overlay==========================================*/
 * {box-sizing: border-box}
 
 /* Container needed to position the overlay */
 .overlay-container {
   position: relative;
-  margin-left:150px;
-  max-width: 50%;
  
 /*grid*/
   flex: 50%;
@@ -256,13 +170,12 @@ p {
 /*photo grid settings*/
 .container img {
   margin-top: 8px;
-  vertical-align: right;
 }
 
 /* Make the image responsive */
-.image {
-  display: block;
-  width: 50%;
+.overlay-image {
+  display: inline-block;
+  width: 80%;
   height: auto;
 }
 
@@ -270,31 +183,71 @@ p {
 .overlay {
   position: absolute;
   bottom: 0;
-  /*background: rgb(0, 0, 0);*/
-  background: rgba(0,128,128, 0.5); /* Black see-through */
-  color: #000;
-  width: 100%;
+  background: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.7); /* white see-through */
+  width: 80%;
   height: 100%;
   transition: .5s ease;
   opacity:0;
   color: white;
-  font-size: 20px;
   padding: 20px;
   text-align: center;
 }
 
 /* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
+.overlay-container:hover .overlay {
   opacity: 1;
 }
 
-/*=================================================Style for book photo grid ===========================================*/
+/*=====================Style for overlay photo grid ==========================*/
 .row {
   display: flex;
+  max-width: 30%;
+  margin-left: 350px;
   flex-wrap: wrap;
-  padding: 0 4px;
-  float: right;
+  padding: 20px 4px;
 }
+
+
+
+
+
+
+
+
+/* ================================================= Links in article section ============================================ */
+/* Unvisited links */
+article a:link {
+  font: 20px/10px Georgia, Serif;
+  color: black;
+  text-decoration: underline overline #000;
+  outline: none;
+}
+
+/* Visited links */
+article a:visited {
+  color: grey;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Mouse pointer on link */
+article a:hover {
+  background-color: #bc9f81;
+  color: #1e2953;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Mouse pointer on link and left button down */
+article a:active {
+  background-color: #1e2953;
+  color: #bc9f81;
+}
+
+
+
+
 
 
 
@@ -356,10 +309,24 @@ p {
   background-color: rgba(0,0,0,0.8);
 }
 
+
+
+
 /* Caption text */
-.text {
-  font: 20px "Comfortaa", cursive;
-  color: black;
+.slideshowinstruct {
+	font: 30px Georgia, Serif;
+	color:grey;
+	text-align: center;
+	margin-left: 10%;
+
+}
+
+
+.slideshowcaption {
+  font: 25px Georgia, Serif;
+  color:#fff;
+  background:grey; 
+  padding: 10px;
   text-align: center;
 
 	
@@ -408,6 +375,69 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
+
+
+/*====================================Styling the just for fun article section========================================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  column-count: 3;
+  --webkit-column-count: 3;
+  --moz-column-count: 3;
+  gap: 1rem;
+  padding: 4rem;
+}
+
+.jffimage img {
+  height: auto;
+  width: 100%;
+}
+
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: 810px) {
+  .gallery {
+    column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 2;
+    --webkit-column-count: 2;
+    --moz-column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gallery {
+    column-count: 1;
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
   
 /*==========================================Styling for footer=============================================*/
    footer{
