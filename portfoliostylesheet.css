@@ -249,14 +249,15 @@ article a:active {
 
 
 
-/*==============================================================Slideshow==============================================*/
+/*============================================================== Slideshow ==============================================*/
 
 /* Slideshow container */
 .mySlides {
-  display:block;
-  max-width: 50%;
+  display:inline-block;
+  max-width: 60%;
   position: relative;
-  margin-left: 30em;
+  margin-left: 27em;
+  margin-right: 12em;
 
 
 }
@@ -312,19 +313,19 @@ article a:active {
 
 /* Caption text */
 .slideshowinstruct {
-	font: 30px Georgia, Serif;
+	font: 2.2em Georgia, Serif;
 	color:grey;
-	text-align: center;
-	margin-left: 10%;
+	margin-left: 10em;
+ 	margin-right: 2em;
 
 }
 
 
 .slideshowcaption {
-  font: 25px Georgia, Serif;
+  font: 1.2em Georgia, Serif;
   color:#fff;
   background:grey; 
-  padding: 10px;
+  padding: 0.5em;
   text-align: center;
 
 	
@@ -425,7 +426,6 @@ article a:active {
     --moz-column-count: 1;
   }
 }
-
 
 
 
