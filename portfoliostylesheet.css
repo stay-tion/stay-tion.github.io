@@ -165,7 +165,7 @@ p {
  
 /*grid*/
   flex: 50%;
-  padding: 0% 0%;
+  padding: 0 0;
 }
 
 /*photo grid settings*/
@@ -176,8 +176,9 @@ p {
 /* Make the image responsive */
 .overlay-image {
   display: block;
-  width: 77%;
+  width: 100%;
   height: auto;
+  padding: 5px;
 }
 
 /* The overlay effect - lays on top of the container and over the image */
@@ -186,7 +187,7 @@ p {
   display: inline-block;
   bottom: 0;
   background: rgba(255, 255, 255, 0.7); /* white see-through */
-  width: 77%;
+  width: 100%;
   height: 100%;
   transition: .5s ease;
   opacity:0;
@@ -219,12 +220,12 @@ p {
 /* ================================================= Links in article section ============================================ */
 /* Unvisited links */
 article a:link {
-  font: 30px Georgia, Serif;
-  padding: 0;
-  margin: 0;
+  font: 25px Georgia, Serif;
+  top: -50;
   color: black;
   text-decoration: underline overline #000;
   text-align: center;
+  clear: none;
 }
 
 /* Visited links */
